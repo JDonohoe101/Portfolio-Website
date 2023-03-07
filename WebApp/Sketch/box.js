@@ -2,8 +2,8 @@ function Box(x, y) {
   this.boxWidth = 12;
   this.boxHeight = 12;
   this.isConnected = false;
-  this.xSpeed = random(random(-2, -1), random(1, 2)/2);
-  this.ySpeed = random(random(-2, -1), random(1, 2)/2);
+  this.xSpeed = random(random(-2, -1), random(1, 2));
+  this.ySpeed = random(random(-2, -1), random(1, 2));
 
   this.xPos = random(0, width - this.boxWidth);
   this.yPos = random(0, height - this.boxHeight);
@@ -15,6 +15,8 @@ function Box(x, y) {
 
   this.setRandomColor = function () {
     let deepRed = color(255, 0, 102);
+    let deeperRed = color(102, 0, 51);
+    let pastelPink = color(255, 102, 153);
     let cyan = color(0, 255, 255);
     let deepBlue = color(0, 153, 255);
     let yellow = color(255,255,0)

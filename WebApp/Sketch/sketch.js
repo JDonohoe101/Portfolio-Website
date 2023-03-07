@@ -3,7 +3,7 @@ canvasWidth = 1300
 canvasHeight = 400
 function setup() {
   canvas = createCanvas(canvasWidth, canvasHeight);
-  canvas.position(0,0)
+  canvas.position(0,100)
   canvas.style('z-index','-1')
   
   boxPop = 22;
@@ -14,7 +14,7 @@ function setup() {
 }
 
 function draw() {
-  background(51, 0, 51);
+  background(0, 38, 77);
   //background(255);
   for (i = 0; i < boxPop; i++) {
     boxes[i].update();
