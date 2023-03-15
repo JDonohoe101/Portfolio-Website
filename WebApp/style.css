@@ -1,24 +1,33 @@
+#hero{
+  padding-left: 40px;
+
+}
+
 #welcome {
     color: rgb(255,255,255);
-    font-size: 100px;
-    font-family: 'BebasNeue',Arial, Helvetica;
+    /* color: rgb(0,0,0); */
+
+    font-size: 520%;
     text-align: left;
-    margin-top: 300px;
+    margin-top: 340px;
+    padding-top: 0%;
     padding-left: 40px;
-    margin-bottom: 0;
+    margin-bottom: -2px;
+    animation: slide-in-left 1.5s forwards;
   }
 
 #subheader{
-  color: rgb(255, 255, 255);
-  font-size: 15px;
+   color: rgb(255, 255, 255); 
+   /* color: rgb(0,0,0);  */
+
+  /* font-size: 10px; */
+  font-size: 90%;
   font-style: italic;
-  font-family:  Helvetica, sans-serif;
   text-align: left;
-  padding-left: 40px;
-  padding-bottom: 54px; 
-  margin-top: 0;
+  padding-bottom: 0%; 
+  padding-top: 4;
   margin-bottom: 10px;
-  
+  animation: slide-in-left 2s forwards;
 }
 
 #profile_pic{
@@ -37,81 +46,50 @@
 
 .about_div{
   background-color: rgb(0, 26, 51);
-  /* background-position: 0%; */
-  /* margin-top: 400px; */
-
+  display: inline-block;
+  margin-top: 400px; 
 }
 
 .subsection{
   font-family: 'BebasNeue',Arial, Helvetica;
   background-color: rgb(255, 0, 102);
+  margin-top: 10px;
   display: inline;
   color: white;
   text-align: left; 
   margin-left: 40px;
-
-  /* padding-bottom: -20px; */
-
 }
 
 p{
   font-family: Arial, Helvetica;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: left;
   padding-left: 40px;
   margin-right: 40%;
-  
   padding-bottom: 2%;
 }
 
-li{
-  font-family: 'BebasNeue', Helvetica, sans-serif;
-  text-decoration: none;
-  color: white;
-  list-style: none;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-nav{
-background: rgb(0, 26, 51);
-height: 7%;
-width: 100%;
-text-decoration: none;
-position: fixed;
-top: 0;
-left: 0;
-}
-
-nav ul{
-  float: left;
-  margin-right: 40px;
-}
-
-nav ul li{
-  display: inline-block;
-  line-height: 0px;
-  margin: 0 12px;
-
-}
-
-nav ul li a{
-  color: white;
-  font-size: 22px;
-  text-decoration: none;
-
-}
 
 a.active,a:hover{
+  color: rgb(255, 255, 255);
   background: rgb(255, 0, 102);
+} 
+
+.blue-bg{
+  /* background-color: rgb(255,255,255); */
+
+   background-color: rgb(0,38,77); 
 }
-
-body{
-  /* background: linear-gradient(to bottom, rgb(0, 38, 77), rgb(0, 26, 51)); */
-
-  background-color: rgb(0, 38, 77);
-   /* background-color: rgb(0, 26, 51);  */
+.darkBlue-bg{
+  background-color: rgb(0, 26, 51);
+}
+.deepPink-bg{
+  background-color: rgb(255, 0, 102);
+}
+.white-txt{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
 }
 
 @font-face {
@@ -122,6 +100,15 @@ body{
   font-style: normal;
 }
 
-  p{
-    /* height: 200px; */
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
   }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+

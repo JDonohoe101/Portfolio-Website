@@ -1,12 +1,12 @@
 var canvas;
-canvasWidth = 1300
-canvasHeight = 400
+canvasWidth = 1400
+canvasHeight = 685
 function setup() {
   canvas = createCanvas(canvasWidth, canvasHeight);
   canvas.position(0,100)
   canvas.style('z-index','-1')
   
-  boxPop = 22;
+  boxPop = 24;
   boxes = [];
   for (i = 0; i < boxPop; i++) {
     boxes[i] = new Box(width, height);
@@ -14,6 +14,7 @@ function setup() {
 }
 
 function draw() {
+  //background(255,255,255)
   background(0, 38, 77);
   //background(255);
   for (i = 0; i < boxPop; i++) {
@@ -35,7 +36,7 @@ function draw() {
           boxes[k].intersects(boxes[j])
         ) {
           triangleCol = boxes[k].color;
-          triangleCol.setAlpha(10);
+          triangleCol.setAlpha(30);
 
           fill(triangleCol);
           triangle(

@@ -2,55 +2,96 @@
 <html lang="en">
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+
+    <style>
+        /* COLOUR SCHEME */
+
+    </style>
     <title>Jack Donohoe's Portfolio</title>
-        <style>
-        </style>
+
 </head>
-<body>
+<body class="blue-bg">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <div>
-        <nav>
-           <ul>
-                <li><a class = "active" href="dd">About</a></li>
-                <li><a href="dd">Skills</a></li>
-                <li><a href="dd">Work</a></li>
-                <li><a href="dd">Contact</a></li>
+        <nav class="navbar navbar-expand-sm darkBlue-bg fixed-top">
+            <ul class = "navbar-nav">
+                <!-- <li><a class="activeLogo">JACKDONOHOE.DEV</a></li> -->
+                <li class = "nav-item"><a class = "nav-link" href="dd">About</a></li>
+                <li class = "nav-item"><a class = "nav-link" href="dd">Skills</a></li>
+                <li class = "nav-item"><a class = "nav-link" href="dd">Work</a></li>
+                <li class = "nav-item"><a class = "nav-link" href="dd">Contact</a></li>
             </ul>
+
         </nav>
     </div>
     <div>
         <script src="Sketch/box.js"></script>
         <script src="Sketch/sketch.js"></script>
-        <h1 id="welcome">Jack Donohoe</h1>
-        <p id = "subheader">Developer, Computer Science Student</p>
+    </div>
+    <div id="hero">
+        <h1 id="welcome">jack donohoe</h1>
+        <p id = "subheader">computer science student at swansea university</p>
+        
     </div>
 
     <div class = about_div>
-        <img id="profile_pic" src="images/Snapchat-2131655098.jpg" alt="wetowl" width="420" height="420" style="align-items: right">
-
-        <h1 class= subsection> About Me</h1>
-        <p>
-            Hi, I'm Jack. I'm currently studying computer science at Swansea University. 
-            I'm passionate about developing creative applications and interactive experiences among many other things. 
-            In my spare time I am a music producer.
-        </p>
-
-        <h1 class = subsection>SKILLS</h1>
-
-        <p>
-            During my time spent in education I have spent time learning
-            Java, Python, Haskell, Prolog, Lua, HTML, CSS, Javascript, SQL and PHP.
-            I have worked with libraries like JavaFX, p5.js, 
-
-        </p>
-    </div>    
-
-    <!-- <img src="images/WhatsApp Image 2023-03-03 at 23.41.43.jpeg" alt="wetowl" width="420" height="420" style="align-items: right"> -->
-
+        <!-- <img id="profile_pic" src="images/Snapchat-2131655098.jpg" alt="wetowl" width="420" height="420" style="align-items: right"> -->
+        <div class = left_about_div>
+            <h1 class= subsection>About Me</h1>
+            <p>
+                I'm Jack. I'm currently studying computer science at Swansea University. 
+                I'm passionate about developing creative applications and interactive experiences among many other things. 
+                In my spare time I am a music producer and hobbyist graphic designer.
+            </p>
+        </div>
+        <div class=right_about_div>
+            <h1 class = subsection>SKILLS</h1>
+            <p>
+                During my time spent in education I have spent time learning
+                Java, Python, Haskell, Prolog, Lua, HTML, CSS, Javascript, SQL and PHP.
+            </p>
+        </div>
+    </div>   
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top responsive" src="images/Screenshot 2023-03-11 at 16.18.56.png" alt="">
+  
+                    <div class="card-body">
+                        <h5 class="card-title">Ray Tracer</h5>
+                        <p class="card-text">
+                            Ray tracer program made in Java with the JavaFX library for the UI elements.
+                        </p>
+  
+                        <a href="#" class="btn btn-outline-primary btn-sm">
+                            See more
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top responsive" src="images/Screenshot 2023-03-11 at 16.39.59.png" alt="">
+  
+                    <div class="card-body">
+                        <h5 class="card-title">PolyNet</h5>
+                        <p class="card-text">
+                            Sketch made in JavaScript using the p5.js library
+                        </p>
+  
+                        <a href="#" class="btn btn-outline-primary btn-sm">
+                            See more
+                        </a>
+                    </div>
+                </div>
+            </div>
     <!-- <script src="site.js"></script> -->
 </body>
 </html>

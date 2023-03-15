@@ -19,8 +19,11 @@ function Box(x, y) {
     let pastelPink = color(255, 102, 153);
     let cyan = color(0, 255, 255);
     let deepBlue = color(0, 153, 255);
-    let yellow = color(255,255,0)
-    let colors = [deepRed];
+    let yellow = color(255,255,0);
+    let blue = color(0,0,255);
+    let black = color(233,233,233);
+    let grey = color(126,126,126);
+    let colors = [yellow,cyan,deepRed];
     let index = Math.floor(Math.random() * colors.length);
     let colorSelect = colors[index];
     return colorSelect;
@@ -42,7 +45,7 @@ function Box(x, y) {
       other.xPos + this.boxWidth,
       other.yPos + this.boxHeight
     );
-
+//240
     if (d <= 240) {
       return true;
     }
